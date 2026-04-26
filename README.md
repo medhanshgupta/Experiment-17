@@ -13,12 +13,7 @@ A statistical data visualization library built on top of Matplotlib. It provides
 
 import seaborn as sns: Imports a high-level interface based on matplotlib for drawing attractive and informative statistical graphics.
 
-### Comparison of Matplotlib vs. Seaborn Commands
-Chart Type	   Matplotlib Command	                  Seaborn Command
-Line Chart	   plt.plot(x, y, marker=, color=)	    sns.lineplot(x=, y=, data=)
-Bar Chart	     plt.bar(x, height, color=)	          sns.barplot(x=, y=, data=)
-Histogram	     plt.hist(data, bins=, edgecolor=)	  sns.histplot(data, bins=, kde=)
-Scatter Plot	 plt.scatter(x, y, c=colors)	        sns.scatterplot(x=, y=, hue=)
+Matplotlib offers more granular control (custom markers, colors, annotations via plt.text(), reference lines via plt.axvline(), grid via plt.grid()). Seaborn offers built-in statistical features (confidence intervals, KDE, automatic hue encoding) and requires less code for standard statistical plots.
 
 ### Commands used:
 
@@ -44,7 +39,9 @@ sns.countplot(): Uses bars to show the frequency of observations in each categor
 
 sns.boxplot(): Displays the distribution of data based on a five-number summary (minimum, first quartile, median, third quartile, and maximum).   
 
-plt.text(x, y, s, ha, va):Places text string s at position (x, y) with specified horizontal (ha) and vertical (va) alignment.   
+plt.text(x, y, s, ha, va):Places text string s at position (x, y) with specified horizontal (ha) and vertical (va) alignment.  
+
+plt.figure(figsize=(w,h)):Creates a new figure with specified width and height in inches.   
 
 
 ## Conclusion: 
